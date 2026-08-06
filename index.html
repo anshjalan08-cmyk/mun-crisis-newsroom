@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MERIDIAN — Model UN crisis simulation (fictional)</title>
+<meta name="description" content="A fictional news desk built for a Model United Nations crisis simulation. All outlets, articles, people and events on this site are invented. Nothing here is real news.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="simbar">
+  ⚠ Fictional — Model UN crisis simulation
+  <span>Every outlet, byline, quote and event on this site is invented for a classroom exercise. Nothing here is real news.</span>
+</div>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="masthead-top">
+      <span id="dateline-today"></span>
+      <span>Specialised Emergency Session on the Taiwan Strait</span>
+    </div>
+    <h1 class="logo">MERIDIAN</h1>
+    <p class="tagline">Asia-Pacific news desk · Judge the source, not the headline</p>
+  </header>
+
+  <nav class="mainnav">
+    <a href="index.html" aria-current="page">The Wire</a>
+    <a href="sources.html">Source Register</a>
+    <a href="#how">How to read this site</a>
+  </nav>
+
+  <div class="ticker">
+    <div class="ticker-label"><span class="pulse"></span>Live</div>
+    <div class="ticker-view"><div class="ticker-run" id="ticker"></div></div>
+    <div class="ticker-clock" id="clock">--:--:-- UTC</div>
+  </div>
+
+  <div class="filters" id="filters"></div>
+
+  <main class="feed" id="feed"></main>
+
+  <section id="how" style="margin-top:46px;padding-top:26px;border-top:1px solid var(--rule);max-width:700px">
+    <h2 style="font-size:24px;margin:0 0 12px">How to read this site</h2>
+    <p style="color:var(--ink-soft)">Meridian carries filings from several different outlets. They do not agree with each other, and they are not equally reliable. That is the point.</p>
+    <p style="color:var(--ink-soft)">Before you cite anything in committee, check it against the <a href="sources.html">Source Register</a>. Ask four questions of every filing:</p>
+    <ol style="color:var(--ink-soft)">
+      <li><strong>Who is the source?</strong> Named, or "officials familiar with the matter"?</li>
+      <li><strong>Who owns the outlet?</strong> Who pays for it, and what do they want?</li>
+      <li><strong>Does it correct itself?</strong> An outlet that has never issued a correction has not been careful. It has been lucky, or it has not been looking.</li>
+      <li><strong>What is it not saying?</strong> The most effective way to mislead is to be entirely accurate about the wrong things.</li>
+    </ol>
+  </section>
+
+  <footer class="sitefoot">
+    <p><strong>This is a work of fiction.</strong> Meridian, Trident Wire Service, The Pacific Herald, Continental Broadcasting Network, The Signal Post, @straitwatch, White Lotus, and every person quoted on this site do not exist. The events described did not happen. This site was built as a teaching prop for a Model United Nations crisis committee and has no connection to any real news organisation, government or company. Real place names are used only to give the exercise a recognisable map.</p>
+    <p>Nothing on this page is reporting. For actual news about the Taiwan Strait, go to an actual news organisation.</p>
+  </footer>
+
+</div>
+
+<script src="data/bundle.js"></script>
+<script src="assets/app.js"></script>
+<script>
+  document.getElementById("dateline-today").textContent =
+    new Date().toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+  renderFeed();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "tws": {
+    "name": "Trident Wire Service",
+    "short": "TWS",
+    "kind": "International wire agency",
+    "founded": "1949",
+    "owner": "Non-profit member cooperative of 340 subscriber newspapers",
+    "funding": "Subscriber fees. No single member holds more than 2% of voting stock.",
+    "corrections": "Public corrections log. 41 corrections issued in the last 12 months, average 3.1 hours after publication.",
+    "policy": "Two-source rule for all breaking claims. Anonymous sources require editor sign-off and a stated reason for anonymity.",
+    "tell": "Hedges early numbers. Uses datelines. Names its sources or says exactly why it cannot.",
+    "color": "#1b4d6b",
+    "accent": "#2e7ba6"
+  },
+  "herald": {
+    "name": "The Pacific Herald",
+    "short": "Herald",
+    "kind": "Daily newspaper of record",
+    "founded": "1878",
+    "owner": "Halloran Media Group (family-controlled, 4th generation)",
+    "funding": "Subscriptions 61%, advertising 33%, events 6%.",
+    "corrections": "Corrections page, print and web. 88 corrections in the last 12 months.",
+    "policy": "Investigative desk of 22. Strong document sourcing. Slower than the wires by design.",
+    "tell": "Deep and usually right, but its analysis outruns its evidence when it is chasing the wire.",
+    "color": "#3d2d1f",
+    "accent": "#8a6a45"
+  },
+  "cbn": {
+    "name": "Continental Broadcasting Network",
+    "short": "CBN",
+    "kind": "State-funded national broadcaster",
+    "founded": "1958",
+    "owner": "National Broadcasting Authority",
+    "funding": "Licence fee and direct government appropriation. Board appointed by the Ministry of Information.",
+    "corrections": "No public corrections log. Stories are silently updated in place.",
+    "policy": "Editorial guidelines require 'consideration of national interest' during declared emergencies.",
+    "tell": "Rarely prints anything false. Watch what it leaves out, not what it says.",
+    "color": "#5c1f1f",
+    "accent": "#a33c3c"
+  },
+  "signal": {
+    "name": "The Signal Post",
+    "short": "Signal",
+    "kind": "Digital news aggregator",
+    "founded": "2019",
+    "owner": "Signal Post Media Ltd. (Registered offshore, beneficial ownership not disclosed.)",
+    "funding": "Programmatic advertising. Revenue scales with pageviews.",
+    "corrections": "None on record.",
+    "policy": "No published standards page.",
+    "tell": "Fastest to publish, loosest with numbers. Almost always sourced to 'officials' who are never named.",
+    "color": "#7a1f4d",
+    "accent": "#c2437f"
+  },
+  "straitwatch": {
+    "name": "@straitwatch",
+    "short": "Straitwatch",
+    "kind": "Independent open-source intelligence account",
+    "founded": "2021",
+    "owner": "Anonymous individual. Claims to be a former marine traffic analyst.",
+    "funding": "Reader donations.",
+    "corrections": "Corrects openly and quickly in-thread. Also deletes posts without note.",
+    "policy": "Publishes raw AIS and satellite data and lets readers argue. No editor.",
+    "tell": "Often first and often right on technical detail. Also the source of the two worst rumours of the last crisis.",
+    "color": "#1f4d3d",
+    "accent": "#3f9e7a"
+  },
+  "lotus": {
+    "name": "WHITE LOTUS",
+    "short": "White Lotus",
+    "kind": "Unattributed transmission",
+    "founded": "Unknown",
+    "owner": "Unknown",
+    "funding": "Unknown",
+    "corrections": "Has never issued one. Has never needed to.",
+    "policy": "None published. None requested.",
+    "tell": "Appears on this desk without a submission record. The technical team has not been able to explain how.",
+    "color": "#0d0d0d",
+    "accent": "#c9a227"
+  }
+}
