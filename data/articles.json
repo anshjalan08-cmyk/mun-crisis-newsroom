@@ -4,7 +4,7 @@
     "outlet": "tws",
     "incident": "c1-yellow-river",
     "headline": "Yellow River discolouration reported across 300km; independent verification refused",
-    "standfirst": "TWS cannot confirm the cause. Access requests by three international hydrology teams have been declined.",
+    "standfirst": "TWS cannot confirm the cause. Access requests by three hydrology teams have been declined.",
     "byline": "Trident Wire Service",
     "dateline": "ZHENGZHOU",
     "published": "2026-08-05T09:55:00Z",
@@ -12,15 +12,15 @@
       "breaking"
     ],
     "body": [
-      "Discolouration of the Yellow River was reported along approximately 300 kilometres of its course during the early hours of Wednesday. Provincial authorities have confirmed disruption to drinking water for a population TWS estimates at between eleven and thirteen million.",
-      "The official explanation is iron-oxide sediment mobilised by upstream flash flooding. TWS is not in a position to confirm or dispute this. Requests for site access by three international hydrology teams have been declined without stated reason.",
-      "One element of the official account has been questioned by scientists who spoke to TWS on condition of anonymity, citing fear of prosecution. Sediment carried from upstream would ordinarily produce a discolouration front that travels downstream over a period of hours. Multiple observers along separated stretches of the river report the change appearing at roughly the same time.",
+      "Discolouration of the Yellow River was reported along approximately 300 kilometres of its course early Wednesday. Provincial authorities have confirmed disruption to drinking water for a population TWS estimates at between eleven and thirteen million.",
+      "The official explanation is iron-oxide sediment from upstream flooding. TWS is not in a position to confirm or dispute it. Requests for site access by three international hydrology teams have been declined without stated reason.",
+      "Scientists who spoke to TWS anonymously, citing fear of prosecution, questioned one element. Sediment from upstream would produce a front travelling downstream over hours. Observers along separated stretches report the change appearing at roughly the same time.",
       {
         "type": "quote",
-        "text": "If it came from upstream, we would have watched it arrive. People three hundred kilometres apart are telling us they saw it start at the same moment. One of those two things is wrong, and I do not yet know which.",
+        "text": "If it came from upstream, we would have watched it arrive. People three hundred kilometres apart saw it start at the same moment. One of those two things is wrong, and I do not yet know which.",
         "cite": "Hydrologist, provincial water bureau, speaking anonymously"
       },
-      "Fish mortality has been widely reported. TWS notes that it has received no account of fish being found dead in significant numbers, only of their absence."
+      "Fish mortality has been widely reported. TWS has received no account of fish found dead in significant numbers, only of their absence."
     ]
   },
   {
