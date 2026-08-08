@@ -9,26 +9,26 @@
   },
   "c3-crops": {
     "label": "Crisis 3 — The Crops",
-    "summary": "Root rot across Hebei, Shandong and Henan. Farmers report the decay moves in patterns."
+    "summary": "Root rot across Hebei, Shandong and Henan. The decay moves in patterns."
   },
   "c4-locusts": {
     "label": "Crisis 4 — The Locusts",
-    "summary": "A 2,000 sq km swarm follows the Yangtze in formation, moving northeast toward the failing provinces."
+    "summary": "A 2,000 sq km swarm follows the Yangtze in formation. The second seal has been opened."
   },
   "c5-prophecy": {
     "label": "Crisis 5 — The Prophecy",
-    "summary": "An unsigned four-sentence document appears simultaneously in seven cities and claims responsibility."
+    "summary": "An unsigned four-sentence document appears in seven cities at once and claims responsibility."
   },
   "c6-darkness": {
-    "label": "Crisis 6 — The Darkness (proposed)",
-    "summary": "PROPOSED. Not yet written. See master plan."
+    "label": "Crisis 6 — The Darkness",
+    "summary": "Daylight fails over three northern cities. The fourth seal, delivered on schedule."
   },
   "c7-sickness": {
-    "label": "Crisis 7 — The Sickness (proposed)",
-    "summary": "PROPOSED. Not yet written. See master plan."
+    "label": "Crisis 7 — The Sickness",
+    "summary": "Respiratory illness overwhelms the basins. Taiwan offers a medical mission."
   },
   "c8-strait": {
-    "label": "Crisis 8 — The Strait (proposed)",
-    "summary": "PROPOSED. Not yet written. See master plan."
+    "label": "Crisis 8 — The Strait",
+    "summary": "The phenomena appear in Taiwan. White Lotus does not claim it."
   }
 }
