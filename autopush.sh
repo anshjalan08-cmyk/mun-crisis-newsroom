@@ -53,12 +53,15 @@ LAST_HASH=""
 FAILS=0
 
 while true; do
-  # hash the master content file so we only act on real content changes
-  if [ -f content/articles.json ]; then
-    HASH=$(shasum content/articles.json 2>/dev/null | cut -d' ' -f1)
-  else
-    HASH=""
-  fi
+  # Hash every source file that can change what delegates see. Watching only
+  # content/articles.json missed batch releases, which live in released.json.
+  HASH=$(cat \
+      content/articles.json \
+      content/released.json \
+      data/outlets.json \
+      data/ticker.json \
+      data/incidents.json \
+      2>/dev/null | shasum 2>/dev/null | cut -d' ' -f1)
 
   if [ -n "$HASH" ] && [ "$HASH" != "$LAST_HASH" ]; then
     if [ -n "$LAST_HASH" ]; then

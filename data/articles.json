@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "id": "ninefold-c1",
+    "outlet": "ninefold",
+    "incident": "c1-yellow-river",
+    "headline": "The pods are opening in the silt",
+    "standfirst": "What is unearthing along the banks, and what the record says it has meant before.",
+    "byline": "The Ninefold Register",
+    "dateline": "",
+    "published": "2026-08-05T09:25:00Z",
+    "tags": [
+      "unverified"
+    ],
+    "body": [
+      "However, the deepest panic stems from what is happening in the receding mud along the riverbanks. Witnesses confirm that millions of dark, leathery egg pods buried in the silt have begun unearthing and splitting open under the sun. To the thousands fleeing the basin, this is no chemical accident or natural disaster, it is the hatching of a cosmic plague, offering undeniable proof that Heaven has officially broken its mandate with the ruling regime."
+    ]
+  },
+  {
+    "id": "gazette-c1",
+    "outlet": "gazette",
+    "incident": "c1-yellow-river",
+    "headline": "Yellow River basin in flight as blood waters rise",
+    "standfirst": "Towns abandoned, farmland submerged, regional trade paralysed.",
+    "byline": "Free China Gazette",
+    "dateline": "HENAN",
+    "published": "2026-08-05T09:10:00Z",
+    "tags": [
+      "breaking"
+    ],
+    "body": [
+      "Reports from along the Yellow River basin paint a scene of complete apocalyptic collapse as blood-red waters flood surrounding provinces. Entire towns are being abandoned as populations flee the banks in terror, convinced that the sudden flash floods and poisoned water supplies are the direct result of divine wrath. With regional trade completely paralyzed and farmland submerged beneath the deluge, the catastrophe has pushed the region into total civil chaos."
+    ]
+  }
+]
