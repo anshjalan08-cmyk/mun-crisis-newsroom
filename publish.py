@@ -24,7 +24,8 @@ OUT = ROOT / "data" / "articles.json"
 BUNDLE = ROOT / "data" / "bundle.js"
 OUTLETS = ROOT / "data" / "outlets.json"
 TICKER = ROOT / "data" / "ticker.json"
-INCIDENTS = ROOT / "data" / "incidents.json"
+INCIDENTS = ROOT / "content" / "incidents.json"   # master, gitignored
+INCIDENTS_OUT = ROOT / "data" / "incidents.json"  # generated, published
 RELEASED = ROOT / "content" / "released.json"
 NOTES = ROOT / "CHAIR_NOTES.md"
 
@@ -92,7 +93,12 @@ def main() -> int:
     # bundle.js — lets the site render from file:// with no web server
     outlets = json.loads(OUTLETS.read_text(encoding="utf-8")) if OUTLETS.exists() else {}
     ticker = json.loads(TICKER.read_text(encoding="utf-8")) if TICKER.exists() else {"standing": []}
-    incidents = json.loads(INCIDENTS.read_text(encoding="utf-8")) if INCIDENTS.exists() else {}
+    # Only ship incidents that already have a released article. Otherwise the
+    # file hands delegates the name and premise of every future crisis.
+    all_incidents = json.loads(INCIDENTS.read_text(encoding="utf-8")) if INCIDENTS.exists() else {}
+    live_ids = {a.get("incident") for a in published}
+    incidents = {k: v for k, v in all_incidents.items() if k in live_ids}
+    INCIDENTS_OUT.write_text(json.dumps(incidents, indent=2, ensure_ascii=False), encoding="utf-8")
     bundle = {
         "articles": published,
         "outlets": outlets,
