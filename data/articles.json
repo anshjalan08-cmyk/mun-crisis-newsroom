@@ -1,5 +1,45 @@
 [
   {
+    "id": "pacific-2105",
+    "outlet": "pacific",
+    "incident": "c2-yangtze",
+    "headline": "Seoul's foundries absorbed Taiwanese orders within 72 hours of the cable severance",
+    "standfirst": "Officials in two allied capitals say contracts of that size do not move in three days without preparatory contact.",
+    "byline": "Pacific Herald",
+    "dateline": "TOKYO",
+    "published": "2026-08-05T21:05:00Z",
+    "tags": [],
+    "body": [
+      "South Korean legacy-node foundry capacity absorbed a substantial share of orders Taiwanese fabs could not fill in the 72 hours following the cable severance, according to order-book data and three people familiar with the reallocation.",
+      "The speed of the transfer has drawn attention. Officials in two allied capitals said privately that contracts of that size do not move in three days without preparatory contact, and that the question of what Seoul knew, and when, is now being asked.",
+      {
+        "type": "quote",
+        "text": "Nobody is alleging South Korea did anything. Everybody is asking why they were ready.",
+        "cite": "Official in an allied capital"
+      },
+      "South Korea's trade ministry called the suggestion baseless and said reallocation clauses are standard in supply agreements."
+    ]
+  },
+  {
+    "id": "signal-1900",
+    "outlet": "signal",
+    "incident": "c2-yangtze",
+    "headline": "BLOOD GRAIN: BRAZIL CHARGED BEIJING FOUR TIMES THE MARKET RATE AS CHINA STARVED",
+    "standfirst": "Brasília lectured the world on non-intervention. The same week, it charged a starving country a premium that would embarrass a cartel.",
+    "byline": "Signal Post Newsdesk",
+    "dateline": "",
+    "published": "2026-08-05T19:02:00Z",
+    "tags": [
+      "breaking"
+    ],
+    "body": [
+      "Brazil sold Beijing emergency grain at four times the going rate in a staggering act of war profiteering, cashing in on a catastrophe that has left twelve million people without drinking water.",
+      "The 400,000-tonne deal represents the single largest opportunistic markup in the modern grain trade, one commodities analyst said.",
+      "Brasília has spent this session lecturing the world about non-intervention and peaceful dialogue. It has spent the same week charging a starving country a premium that would embarrass a cartel.",
+      "Brazil's agriculture ministry did not respond to a request for comment."
+    ]
+  },
+  {
     "id": "tws-c5",
     "outlet": "tws",
     "incident": "c5-prophecy",
@@ -46,6 +86,23 @@
     "body": [
       "An ancient, anonymous text has manifested simultaneously across public squares, temples, underground presses, and encrypted networks in seven major cities. The four-sentence document claims direct responsibility for the cascading catastrophes of the past forty-eight hours—the blood-red rivers, the crop decay, and the guided locust swarms. Linguists confirm the prose is written in the archaic style of imperial China, operating under a framework of divine authority rather than modern political ideology: 'The Mandate has elapsed. The rivers have spoken. The land has spoken. What follows is not a disaster — it is a correction.'",
       "International intelligence agencies searching for the origin of the broadcast spent six hours chasing an eerie absence, finding zero digital footprints, print signatures, or distribution hubs. The proclamation simply appeared everywhere at once, bearing a mysterious ancient symbol at its conclusion. As a physical copy was slipped silently beneath the hotel room door of the Chinese delegation—who remain frozen in absolute silence—the message is clear: the force dismantling the state is not a mortal political movement, but an unstoppable cosmic reckoning."
+    ]
+  },
+  {
+    "id": "cbn-1630",
+    "outlet": "cbn",
+    "incident": "c2-yangtze",
+    "headline": "Japanese-owned survey vessel recorded near cable corridor, records show",
+    "standfirst": "Vessel equipped for seabed mapping was operating 40 nautical miles from the Matsu corridor on 4 August. Its charter holder is not disclosed in Japanese filings.",
+    "byline": "CBN Newsroom",
+    "dateline": "",
+    "published": "2026-08-05T16:30:00Z",
+    "tags": [],
+    "body": [
+      "A subsea survey vessel owned by a Japanese marine engineering firm was operating approximately 40 nautical miles from the Taiwan-Matsu cable corridor on 4 August, port and positioning records confirm.",
+      "The vessel is equipped for seabed mapping and cable route surveying. Its charter for the period was held by a third-party contractor whose ownership is not disclosed in Japanese corporate filings.",
+      "Regional observers noted that discussion of the incident has focused exclusively on parties east of the strait, and questioned why the presence of specialist subsea capability belonging to a party with declared strategic interests in the outcome has drawn no attention whatsoever.",
+      "All parties are urged to exercise restraint."
     ]
   },
   {
