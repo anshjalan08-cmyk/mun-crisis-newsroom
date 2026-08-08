@@ -1,0 +1,8 @@
+# chair-only. never publish these.
+content/
+CHAIR_NOTES.md
+chair_bible.html
+
+.DS_Store
+__pycache__/
+chair-tools/

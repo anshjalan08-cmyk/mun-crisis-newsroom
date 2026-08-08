@@ -1,10 +1,34 @@
 {
-  "cable-cut": {
-    "label": "Severance of the Matsu submarine cables",
-    "summary": "Both remaining cables to the Matsu Islands failed within nine minutes on 5 August. Cause disputed."
+  "c1-yellow-river": {
+    "label": "Crisis 1 — The Blood River",
+    "summary": "The Yellow River runs red across 300km simultaneously. Twelve million lose drinking water."
   },
-  "cutter-collision": {
-    "label": "Collision during attempted interception, 04:10",
-    "summary": "A Taiwanese coast guard cutter and an unflagged vessel collided northeast of Nangan. Accounts differ on almost every material fact."
+  "c2-yangtze": {
+    "label": "Crisis 2 — The Second River",
+    "summary": "The Yangtze turns red overnight. Thirty per cent of national freshwater compromised."
+  },
+  "c3-crops": {
+    "label": "Crisis 3 — The Crops",
+    "summary": "Root rot across Hebei, Shandong and Henan. Farmers report the decay moves in patterns."
+  },
+  "c4-locusts": {
+    "label": "Crisis 4 — The Locusts",
+    "summary": "A 2,000 sq km swarm follows the Yangtze in formation, moving northeast toward the failing provinces."
+  },
+  "c5-prophecy": {
+    "label": "Crisis 5 — The Prophecy",
+    "summary": "An unsigned four-sentence document appears simultaneously in seven cities and claims responsibility."
+  },
+  "c6-darkness": {
+    "label": "Crisis 6 — The Darkness (proposed)",
+    "summary": "PROPOSED. Not yet written. See master plan."
+  },
+  "c7-sickness": {
+    "label": "Crisis 7 — The Sickness (proposed)",
+    "summary": "PROPOSED. Not yet written. See master plan."
+  },
+  "c8-strait": {
+    "label": "Crisis 8 — The Strait (proposed)",
+    "summary": "PROPOSED. Not yet written. See master plan."
   }
 }

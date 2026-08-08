@@ -25,6 +25,7 @@ BUNDLE = ROOT / "data" / "bundle.js"
 OUTLETS = ROOT / "data" / "outlets.json"
 TICKER = ROOT / "data" / "ticker.json"
 INCIDENTS = ROOT / "data" / "incidents.json"
+RELEASED = ROOT / "content" / "released.json"
 NOTES = ROOT / "CHAIR_NOTES.md"
 
 
@@ -71,11 +72,19 @@ def main() -> int:
                         file=sys.stderr,
                     )
 
+    # Only batches you have explicitly released reach the site. Everything else
+    # stays queued. content/released.json is the single source of truth.
+    released = set()
+    if RELEASED.exists():
+        released = set(json.loads(RELEASED.read_text(encoding="utf-8")).get("released", []))
+    queued = [a for a in articles if a.get("batch") not in released]
+    articles = [a for a in articles if a.get("batch") in released]
+
     articles.sort(key=lambda a: a["published"], reverse=True)
 
     # Strip everything chair-only. 'claims' is the condensed contradiction map —
     # publishing it would hand delegates the analysis they're supposed to do.
-    CHAIR_ONLY = {"chairNote", "claims"}
+    CHAIR_ONLY = {"chairNote", "claims", "batch"}
     published = [{k: v for k, v in a.items() if k not in CHAIR_ONLY} for a in articles]
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(published, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -102,14 +111,26 @@ def main() -> int:
         f"Generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
         "",
     ]
-    for a in articles:
-        lines.append(f"## {a['published']} — [{a['outlet']}] {a['headline']}")
+    # Notes cover EVERY article, released or not — you need to read ahead.
+    everything = sorted(articles + queued, key=lambda a: (a.get("batch", 99), a["published"]))
+    cur = None
+    for a in everything:
+        b = a.get("batch")
+        if b != cur:
+            cur = b
+            state = "LIVE" if b in released else "queued"
+            lines.append(f"---\n\n# Batch {b} — {state}\n")
+        lines.append(f"## {a['published'][11:16]} — [{a['outlet']}] {a['headline']}")
         lines.append("")
         lines.append(a.get("chairNote", "_no note_"))
         lines.append("")
     NOTES.write_text("\n".join(lines), encoding="utf-8")
 
     print(f"published {len(published)} articles -> data/articles.json + data/bundle.js")
+    if queued:
+        nxt = min(a["batch"] for a in queued)
+        n = len([a for a in queued if a["batch"] == nxt])
+        print(f"queued: {len(queued)} articles held. next up is batch {nxt} ({n} articles)")
     print(f"chair notes -> CHAIR_NOTES.md (gitignored)")
     return 0
 
