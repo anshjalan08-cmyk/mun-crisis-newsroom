@@ -10,7 +10,9 @@
     "policy": "No published standards. Prints eyewitness accounts without independent verification.",
     "tell": "Everything it reports about state repression tends to be broadly true. Everything it reports about causes and meaning is speculation printed as fact. It cannot tell the difference between the two, and neither can most readers.",
     "color": "#7a1f4d",
-    "accent": "#c2437f"
+    "accent": "#c2437f",
+    "retired": true,
+    "retiredNote": "No longer filing to this desk. Last received 05 August. Meridian has been unable to reach the newsroom since."
   },
   "ninefold": {
     "name": "The Ninefold Register",
@@ -49,7 +51,9 @@
     "policy": "Editorial guidance issued daily by the Ministry. Publishing outside guidance is a criminal offence.",
     "tell": "Its denials are technically precise, which is what makes them useful. Read what it specifically denies and you learn what it has been asked about. Read what it threatens people for saying and you learn what it fears is true.",
     "color": "#5c1f1f",
-    "accent": "#a33c3c"
+    "accent": "#a33c3c",
+    "retired": true,
+    "retiredNote": "No longer filing to this desk. Last received 05 August. No notice of cessation was given."
   },
   "tws": {
     "name": "Trident Wire Service",
