@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Trident Wire Service",
+    "based": "Singapore",
+    "owner": "Journalist trust",
+    "funding": "Subscriber"
+  },
+  {
+    "name": "Pacific Herald",
+    "based": "Tokyo",
+    "owner": "Family holding company; editorially independent",
+    "funding": "Subscriptions, advertising"
+  },
+  {
+    "name": "Continental Broadcasting Network",
+    "based": "Hong Kong",
+    "owner": "Listed media group; second-largest shareholder is a provincial investment vehicle",
+    "funding": "Advertising, distribution deals"
+  },
+  {
+    "name": "The Signal Post",
+    "based": "London",
+    "owner": "Private holding company",
+    "funding": "Advertising, subscriptions"
+  },
+  {
+    "name": "@straitwatch",
+    "based": "—",
+    "owner": "Independent individual",
+    "funding": "None declared"
+  }
+]

@@ -60,13 +60,14 @@
     "short": "TWS",
     "kind": "International wire agency",
     "founded": "1949",
-    "owner": "Non-profit member cooperative of 340 subscriber newspapers",
-    "funding": "Subscriber fees. No single member holds more than 2% of voting stock.",
+    "owner": "Journalist trust",
+    "funding": "Subscriber",
     "corrections": "Public corrections log. 41 corrections issued in the last 12 months, average 3.1 hours after publication.",
     "policy": "Two-source rule for all breaking claims. Anonymous sources require editor sign-off and a stated reason for anonymity.",
     "tell": "The only outlet here that will tell you it does not know something. Slow, hedged, frequently dull. Its dullness is the product of a process the other two do not have.",
     "color": "#1b4d6b",
-    "accent": "#2e7ba6"
+    "accent": "#2e7ba6",
+    "based": "Singapore"
   },
   "kestrel": {
     "name": "@kestrel_obs",
@@ -93,5 +94,45 @@
     "tell": "Appears on this desk without a submission record. The technical team has not been able to explain how.",
     "color": "#0d0d0d",
     "accent": "#c9a227"
+  },
+  "pacific": {
+    "name": "Pacific Herald",
+    "short": "HERALD",
+    "kind": "Daily newspaper",
+    "based": "Tokyo",
+    "owner": "Family holding company; editorially independent",
+    "funding": "Subscriptions, advertising",
+    "color": "#3d2d1f",
+    "accent": "#8a6a45"
+  },
+  "cbn": {
+    "name": "Continental Broadcasting Network",
+    "short": "CBN",
+    "kind": "Broadcaster",
+    "based": "Hong Kong",
+    "owner": "Listed media group; second-largest shareholder is a provincial investment vehicle",
+    "funding": "Advertising, distribution deals",
+    "color": "#5c1f1f",
+    "accent": "#a33c3c"
+  },
+  "signal": {
+    "name": "The Signal Post",
+    "short": "SIGNAL",
+    "kind": "Digital news",
+    "based": "London",
+    "owner": "Private holding company",
+    "funding": "Advertising, subscriptions",
+    "color": "#7a1f4d",
+    "accent": "#c2437f"
+  },
+  "straitwatch": {
+    "name": "@straitwatch",
+    "short": "STRAITWATCH",
+    "kind": "Independent analyst",
+    "based": "—",
+    "owner": "Independent individual",
+    "funding": "None declared",
+    "color": "#1f4d3d",
+    "accent": "#3f9e7a"
   }
 }
