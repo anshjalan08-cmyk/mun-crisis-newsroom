@@ -1,5 +1,54 @@
 [
   {
+    "id": "tws-c5",
+    "outlet": "tws",
+    "incident": "c5-prophecy",
+    "headline": "Document appearances confirmed in four of seven cities; origin not established",
+    "standfirst": "TWS reporters have handled physical copies in Xi'an and Chengdu. No printer, no distributor, no digital trace found.",
+    "byline": "Trident Wire Service",
+    "dateline": "XI'AN",
+    "published": "2026-08-05T19:00:00Z",
+    "tags": [],
+    "body": [
+      "TWS reporters have physically handled copies of the circulating document in Xi'an and Chengdu, and confirmed appearances in two further cities through named local sources. Reports from the remaining three cities are unverified.",
+      "The paper is ordinary and commercially available. TWS has been unable to identify a printer, a distributor or a point of origin, and has found no digital trace preceding the first physical sighting.",
+      "TWS notes that failure to find an origin is not evidence that none exists. Two linguists consulted separately agreed the phrasing is deliberately archaic. Neither would say it could not have been written last week.",
+      "No organisation has claimed authorship."
+    ]
+  },
+  {
+    "id": "voice-c5",
+    "outlet": "voice",
+    "incident": "c5-prophecy",
+    "headline": "State security bulletin: unauthorised texts and network intrusion",
+    "standfirst": "Event identified as a cyber-attack using historical imperial phrasing. Possession declared an act of high treason.",
+    "byline": "Voice of Order",
+    "dateline": "",
+    "published": "2026-08-05T18:50:00Z",
+    "tags": [],
+    "body": [
+      "The Ministry of State Security has issued an emergency bulletin addressing a coordinated, illegal psychological operation attempting to distribute unauthorized texts across select municipal centers. State technical teams are currently neutralizing hostile network intrusions that briefly posted archaic, feudal slogans across encrypted channels and public display boards in seven cities.",
+      "State authorities flatly rejected claims that the four-sentence document possesses untraceable or supernatural origins, identifying the event as a crude cyber-attack orchestrated by subversives using historical imperial phrasing to provoke public panic. Claims regarding mysterious symbols or unauthorized deliveries to diplomatic lodging are complete fabrications. Citizens are strictly warned that possessing, copying, or sharing this illicit material constitutes an act of high treason."
+    ]
+  },
+  {
+    "id": "gazette-c5",
+    "outlet": "gazette",
+    "incident": "c5-prophecy",
+    "headline": "The Mandate has elapsed: unsigned text appears in seven cities at once",
+    "standfirst": "No digital footprint. No print origin. A copy was slipped under the door of the Chinese delegation.",
+    "byline": "Free China Gazette",
+    "dateline": "",
+    "published": "2026-08-05T18:30:00Z",
+    "tags": [
+      "breaking"
+    ],
+    "body": [
+      "An ancient, anonymous text has manifested simultaneously across public squares, temples, underground presses, and encrypted networks in seven major cities. The four-sentence document claims direct responsibility for the cascading catastrophes of the past forty-eight hours—the blood-red rivers, the crop decay, and the guided locust swarms. Linguists confirm the prose is written in the archaic style of imperial China, operating under a framework of divine authority rather than modern political ideology: 'The Mandate has elapsed. The rivers have spoken. The land has spoken. What follows is not a disaster — it is a correction.'",
+      "International intelligence agencies searching for the origin of the broadcast spent six hours chasing an eerie absence, finding zero digital footprints, print signatures, or distribution hubs. The proclamation simply appeared everywhere at once, bearing a mysterious ancient symbol at its conclusion. As a physical copy was slipped silently beneath the hotel room door of the Chinese delegation—who remain frozen in absolute silence—the message is clear: the force dismantling the state is not a mortal political movement, but an unstoppable cosmic reckoning."
+    ]
+  },
+  {
     "id": "tws-c1",
     "outlet": "tws",
     "incident": "c1-yellow-river",

@@ -2,5 +2,9 @@
   "c1-yellow-river": {
     "label": "Crisis 1 — The Blood River",
     "summary": "The Yellow River runs red across 300km simultaneously. Twelve million lose drinking water."
+  },
+  "c5-prophecy": {
+    "label": "Crisis 5 — The Prophecy",
+    "summary": "An unsigned four-sentence document appears in seven cities at once and claims responsibility."
   }
 }
