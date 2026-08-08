@@ -1,5 +1,59 @@
 [
   {
+    "id": "tws-c1",
+    "outlet": "tws",
+    "incident": "c1-yellow-river",
+    "headline": "Yellow River discolouration reported across 300km; independent verification refused",
+    "standfirst": "TWS cannot confirm the cause. Access requests by three international hydrology teams have been declined.",
+    "byline": "Trident Wire Service",
+    "dateline": "ZHENGZHOU",
+    "published": "2026-08-05T09:55:00Z",
+    "tags": [
+      "breaking"
+    ],
+    "body": [
+      "Discolouration of the Yellow River was reported along approximately 300 kilometres of its course during the early hours of Wednesday. Provincial authorities have confirmed disruption to drinking water for a population TWS estimates at between eleven and thirteen million.",
+      "The official explanation is iron-oxide sediment mobilised by upstream flash flooding. TWS is not in a position to confirm or dispute this. Requests for site access by three international hydrology teams have been declined without stated reason.",
+      "One element of the official account has been questioned by scientists who spoke to TWS on condition of anonymity, citing fear of prosecution. Sediment carried from upstream would ordinarily produce a discolouration front that travels downstream over a period of hours. Multiple observers along separated stretches of the river report the change appearing at roughly the same time.",
+      {
+        "type": "quote",
+        "text": "If it came from upstream, we would have watched it arrive. People three hundred kilometres apart are telling us they saw it start at the same moment. One of those two things is wrong, and I do not yet know which.",
+        "cite": "Hydrologist, provincial water bureau, speaking anonymously"
+      },
+      "TWS has been unable to independently examine any water sample. Reports of egg pods along the banks have been carried by at least one overseas outlet and denied by state media. TWS has seen no photograph, sample or firsthand account it can verify, and takes no position on whether they exist.",
+      "Fish mortality has been widely reported. TWS notes that it has received no account of fish being found dead in significant numbers, only of their absence."
+    ]
+  },
+  {
+    "id": "voice-c1",
+    "outlet": "voice",
+    "incident": "c1-yellow-river",
+    "headline": "Ministry denies reports of mass flight and riverbank debris",
+    "standfirst": "Claims of population flight described as rumour. Fabricating accounts of supernatural omens carries legal penalties.",
+    "byline": "Voice of Order",
+    "dateline": "",
+    "published": "2026-08-05T09:50:00Z",
+    "tags": [],
+    "body": [
+      "The Ministry firmly denied reports of mass population flight or widespread civil instability, categorizing them as unverified rumors spread by local agitators. Authorities further clarified that alleged 'egg pods' along the banks are simply natural organic debris turned up by floodwaters, warning the public that fabricating stories of chemical sabotage or supernatural omens carries strict legal penalties under emergency public order laws."
+    ]
+  },
+  {
+    "id": "bulletin-c1",
+    "outlet": "bulletin",
+    "incident": "c1-yellow-river",
+    "headline": "Provincial advisory: hydrological event, Yellow River basin",
+    "standfirst": "Iron-oxide sediment following upstream flash flooding. Mobile filtration deployed.",
+    "byline": "Henan Provincial Bulletin",
+    "dateline": "ZHENGZHOU",
+    "published": "2026-08-05T09:35:00Z",
+    "tags": [],
+    "body": [
+      "State authorities issued an official press statement this morning addressing recent hydrological events along the Yellow River basin. According to environmental inspectors, severe upstream flash flooding has washed dense deposits of natural iron-oxide sediment into the river, creating a temporary red discoloration along the water's surface.",
+      "While localized water contamination has temporarily halted agricultural work and disrupted primary trade routes, state engineers have already deployed mobile filtration units to safeguard surrounding freshwater supplies."
+    ]
+  },
+  {
     "id": "ninefold-c1",
     "outlet": "ninefold",
     "incident": "c1-yellow-river",
