@@ -49,6 +49,60 @@
     ]
   },
   {
+    "id": "signal-1552",
+    "outlet": "signal",
+    "incident": "c2-yangtze",
+    "headline": "WASHINGTON KNEW: US WARSHIPS SAILED 48 HOURS BEFORE THE CABLES WENT DOWN",
+    "standfirst": "Seventh Fleet order dated 3 August blows apart Washington's claim to have been caught off guard, as Manila is left out of the loop",
+    "byline": "Signal Post Newsdesk",
+    "dateline": "",
+    "published": "2026-08-05T15:52:00Z",
+    "tags": [
+      "breaking"
+    ],
+    "body": [
+      "American warships were already moving toward Taiwan two days before the strait went dark, in an explosive revelation that blows apart Washington's claim to have been caught off guard.",
+      "A Seventh Fleet posture order dated 3 August sent two vessels racing from Yokosuka toward the Bashi Channel — the exact chokepoint an invasion force would have to cross. The cables were severed at 01:41 on 5 August.",
+      "A source close to Western intelligence told the Signal Post the picture in Washington was \"considerably clearer than anyone is admitting.\"",
+      "The Philippines, which hosts the forward basing that makes the deployment possible, was reportedly not consulted at any stage."
+    ]
+  },
+  {
+    "id": "straitwatch-1505",
+    "outlet": "straitwatch",
+    "incident": "c2-yangtze",
+    "headline": "Thread: Taiwan's cable escort contracting",
+    "standfirst": "",
+    "byline": "@straitwatch",
+    "dateline": "",
+    "published": "2026-08-05T15:05:00Z",
+    "tags": [
+      "thread"
+    ],
+    "body": [
+      "1/ Taiwan's cable escort work. Been looking at CGA procurement.",
+      "2/ Since 2024 the escort contract for Matsu repair runs through an operator that isn't on the CGA's published vendor register. Off-register isn't illegal, it's a discretion provision, it's in the regs.",
+      "3/ Two of the operator's four vessel masters previously served in the PLA Navy. Emigrated, took residency, cleared through standard vetting. All of that is normal and I want that understood.",
+      "4/ I have no evidence of impropriety by anyone here. I'm not implying any. I'm posting it because I checked and nobody else has."
+    ]
+  },
+  {
+    "id": "tws-1410",
+    "outlet": "tws",
+    "incident": "c2-yangtze",
+    "headline": "Chinese grain contract predates river incident by six days, shipping records show",
+    "standfirst": "A state reserve entity contracted for 400,000 tonnes of Brazilian grain on 30 July. TWS has established no connection to the cable severance.",
+    "byline": "Trident Wire Service",
+    "dateline": "SINGAPORE",
+    "published": "2026-08-05T14:10:00Z",
+    "tags": [],
+    "body": [
+      "Bills of lading reviewed by TWS show a Chinese state reserve entity contracted for 400,000 tonnes of Brazilian grain on 30 July, six days before the Yellow River discolouration was reported. The volume is roughly four times the entity's monthly average over the preceding year.",
+      "Brazil's agriculture ministry confirmed the shipment and described it as commercial. Chinese authorities have not commented on the timing.",
+      "TWS cannot establish whether this reflects advance knowledge, reserve policy, or seasonal buying. TWS has found no connection between this contract and the severance of the Matsu cables, and is aware of none."
+    ]
+  },
+  {
     "id": "tws-c1",
     "outlet": "tws",
     "incident": "c1-yellow-river",

@@ -495,3 +495,34 @@ footer.sitefoot strong { color: var(--sim); }
   .dossier dd { margin-bottom: 10px; }
   .source-note dl { grid-template-columns: 1fr; }
 }
+
+/* ---------- thread posts (@straitwatch et al) ---------- */
+
+.article .body .post {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 4px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.article .body .post:last-child { border-bottom: none; }
+.article .body .postnum {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-faint);
+  padding-top: 5px;
+}
+.article .body .post p { margin: 0; font-size: 17.5px; line-height: 1.6; }
+
+/* ---------- source register table ---------- */
+
+table.cmp.reg tbody th {
+  font-family: var(--serif);
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink);
+  border-right: 1px solid var(--rule-soft);
+}
+table.cmp.reg thead th { width: auto; }
+table.cmp.reg td { font-size: 13.5px; }
