@@ -6,6 +6,7 @@ const AG = {
   articles: null,
   ticker: null,
   incidents: null,
+  register: null,
 
   async load() {
     if (AG.outlets && AG.articles) return;
@@ -13,7 +14,7 @@ const AG = {
     // Preferred path: fetch the JSON, so a deployed site always serves fresh data.
     try {
       const bust = "?v=" + Date.now();
-      const [o, a, t, i] = await Promise.all([
+      const [o, a, t, i, rg] = await Promise.all([
         fetch("data/outlets.json" + bust).then((r) => r.json()),
         fetch("data/articles.json" + bust).then((r) => r.json()),
         fetch("data/ticker.json" + bust)
@@ -22,11 +23,15 @@ const AG = {
         fetch("data/incidents.json" + bust)
           .then((r) => r.json())
           .catch(() => ({})),
+        fetch("data/register.json" + bust)
+          .then((r) => r.json())
+          .catch(() => []),
       ]);
       AG.outlets = o;
       AG.articles = a;
       AG.ticker = t;
       AG.incidents = i;
+      AG.register = rg;
     } catch (err) {
       // Fallback: opened straight off the disk (file://), where browsers block fetch.
       // data/bundle.js is loaded by a plain <script> tag, which is not blocked.
@@ -36,6 +41,7 @@ const AG = {
       AG.articles = b.articles;
       AG.ticker = b.ticker || { standing: [] };
       AG.incidents = b.incidents || {};
+      AG.register = b.register || [];
     }
 
     AG.articles = AG.articles.sort((x, y) => new Date(y.published) - new Date(x.published));
@@ -262,9 +268,22 @@ async function renderArticle() {
   document.title = `${a.headline} — ${o.name}`;
   root.className = "article" + (isLotus ? " lotus-page" : "");
 
+  // Threads render as numbered posts, not as newspaper paragraphs.
+  const isThread =
+    (a.tags || []).includes("thread") ||
+    (typeof a.body?.[0] === "string" && /^\d+\/\s/.test(a.body[0]));
+
   const body = (a.body || [])
     .map((b) => {
-      if (typeof b === "string") return `<p>${AG.esc(b)}</p>`;
+      if (typeof b === "string") {
+        if (isThread) {
+          const m = b.match(/^(\d+)\/\s*(.*)$/s);
+          return m
+            ? `<div class="post"><span class="postnum">${AG.esc(m[1])}/</span><p>${AG.esc(m[2])}</p></div>`
+            : `<div class="post"><span class="postnum"></span><p>${AG.esc(b)}</p></div>`;
+        }
+        return `<p>${AG.esc(b)}</p>`;
+      }
       if (b.type === "quote")
         return `<blockquote>${AG.esc(b.text)}${b.cite ? `<cite>${AG.esc(b.cite)}</cite>` : ""}</blockquote>`;
       return "";
@@ -415,27 +434,40 @@ async function renderCompare() {
 
 /* ---------------------------- sources ---------------------------- */
 
+/* Ownership and funding only. Never reliability, editorial line, or any
+   assessment of accuracy — delegates work that out from the coverage. */
 async function renderSources() {
   await AG.load();
   const root = document.getElementById("dossiers");
   if (!root) return;
-  root.innerHTML = Object.entries(AG.outlets)
-    .map(
-      ([id, o]) => `
-    <div class="dossier">
-      <div class="dossier-head" style="background:${AG.esc(o.color)}">
-        <div class="kind">${AG.esc(o.kind)}</div>
-        <h2>${AG.esc(o.name)}</h2>
-      </div>
-      <dl>
-        <dt>Established</dt><dd>${AG.esc(o.founded)}</dd>
-        <dt>Ownership</dt><dd>${AG.esc(o.owner)}</dd>
-        <dt>Funding</dt><dd>${AG.esc(o.funding)}</dd>
-        <dt>Corrections</dt><dd>${AG.esc(o.corrections)}</dd>
-        <dt>Standards</dt><dd>${AG.esc(o.policy)}</dd>
-        <dt>Aggregator note</dt><dd><em>${AG.esc(o.tell)}</em></dd>
-      </dl>
-    </div>`
-    )
-    .join("");
+
+  let rows = AG.register;
+  if (!rows) {
+    try {
+      rows = await fetch("data/register.json?v=" + Date.now()).then((r) => r.json());
+    } catch {
+      rows = (window.__MERIDIAN__ && window.__MERIDIAN__.register) || [];
+    }
+  }
+
+  root.innerHTML = `
+    <div class="cmp-scroll">
+      <table class="cmp reg">
+        <thead><tr>
+          <th>Outlet</th><th>Based</th><th>Ownership</th><th>Funding</th>
+        </tr></thead>
+        <tbody>
+          ${rows
+            .map(
+              (r) => `<tr>
+                <th scope="row">${AG.esc(r.name)}</th>
+                <td>${AG.esc(r.based)}</td>
+                <td>${AG.esc(r.owner)}</td>
+                <td>${AG.esc(r.funding)}</td>
+              </tr>`
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>`;
 }

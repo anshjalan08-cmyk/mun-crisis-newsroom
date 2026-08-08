@@ -26,6 +26,7 @@ OUTLETS = ROOT / "data" / "outlets.json"
 TICKER = ROOT / "data" / "ticker.json"
 INCIDENTS = ROOT / "content" / "incidents.json"   # master, gitignored
 INCIDENTS_OUT = ROOT / "data" / "incidents.json"  # generated, published
+REGISTER = ROOT / "data" / "register.json"
 RELEASED = ROOT / "content" / "released.json"
 NOTES = ROOT / "CHAIR_NOTES.md"
 
@@ -104,6 +105,7 @@ def main() -> int:
         "outlets": outlets,
         "ticker": ticker,
         "incidents": incidents,
+        "register": json.loads(REGISTER.read_text(encoding="utf-8")) if REGISTER.exists() else [],
     }
     BUNDLE.write_text(
         "window.__MERIDIAN__ = " + json.dumps(bundle, ensure_ascii=False) + ";\n",
